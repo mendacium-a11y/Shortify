@@ -6,13 +6,25 @@
 }
 
 .logo {
-  height: 6em;
+  height: 10em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  
 }
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg); /* Start with no rotation */
+  }
+  100% {
+    transform: rotate(360deg); /* Rotate 360 degrees */
+  }
+}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
+  animation: rotateAnimation 20s linear infinite;
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -39,4 +51,13 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.qr{
+  margin: 2vh 2vh;
+}
+
+.qrcode{
+  border: 2px solid white;
+  border-radius: 0.5rem;
 }
