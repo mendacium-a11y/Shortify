@@ -61,3 +61,14 @@
   border: 2px solid white;
   border-radius: 0.5rem;
 }
+
+.submit{
+  margin: 2vh 0;
+  border: 1px solid whitesmoke;
+  transition: transform 0.2s ease-in-out;
+}
+
+.submit:hover{
+  border: 1px solid whitesmoke;
+  transform: scale(1.1);
+}

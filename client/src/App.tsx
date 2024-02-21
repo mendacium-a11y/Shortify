@@ -7,7 +7,7 @@ function App() {
 
   const [location, setLocation] = useState<string>('')
   const [redirect, setRedirect] = useState<boolean>(false)
-  const [qrcodeState, setqrcodeState] = useState<boolean>(true)
+  const [qrcodeState, setqrcodeState] = useState<boolean>(false)
   const [isHovered, setIsHovered] = useState(false);
   const rotationRef = useRef(0);
 
@@ -19,6 +19,10 @@ function App() {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+
+  const showqr = () => {
+    setqrcodeState(!qrcodeState)
+  }
 
   useEffect(() => {
     setLocation(window.location.pathname.slice(1))
@@ -60,6 +64,7 @@ function App() {
       <div className='qr' style={{ display: qrcodeState ? 'block' : 'none' }}>
         <QRCodeCanvas className='qrcode' value="https://www.google.com"/>
       </div>
+      <button className='submit' onClick={showqr}>Create QR & link</button>
       {/* <p>
       {window.location.pathname}</p> */}
     </>
