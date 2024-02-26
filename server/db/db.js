@@ -26,16 +26,19 @@ db.run(createTableQuery, (err) => {
 });
 
 const insertLink = (url) => {
-    
     const key = Math.random().toString(36).slice(2,8);
-    const sql = `INSERT INTO links (Key, Url) VALUES (?, ?)`;
-    db.run(sql, [key, url], function(err) {
+    const sqlQuery = `INSERT INTO links (Key, Url) VALUES (?, ?)`;
+    db.run(sqlQuery, [key, url], function(err) {
       if (err) {
         return console.error(err.message);
       }
       console.log(`A row has been inserted with key ${key}`);
     });
     return key;
+}
+
+const query = (key) => {
+
 }
 
 // insertLink("https://google.com")
