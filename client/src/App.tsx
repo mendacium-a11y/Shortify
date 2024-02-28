@@ -4,20 +4,6 @@ import Router from './Router/Router';
 import routes from './Router/Routes';
 
 
-function App() {
-
-  return (
-    <>
-      <Navbar />
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-      <Router routes={routes} />
-    </>
-
-  )
-
-
-}
+const App = () => <Router routes={routes} />
 
 export default App
