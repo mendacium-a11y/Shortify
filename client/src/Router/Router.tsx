@@ -1,7 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, FC } from 'react';
 import Route from './RouteComponent';
 
-const Router = ({ routes }) => {
+interface RouteObject {
+  path: string;
+  component: React.ComponentType<any>;
+}
+
+interface RouterProps {
+  routes: RouteObject[];
+}
+
+interface Params {
+  [key: string]: string;
+}
+
+const Router: FC<RouterProps> = ({ routes }) => {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
 
   useEffect(() => {
@@ -28,10 +41,10 @@ const Router = ({ routes }) => {
   return match ? <Route component={match.component} params={extractParams(match.path, currentPath)} /> : null;
 };
 
-const extractParams = (routePath, currentPath) => {
+const extractParams = (routePath: string, currentPath: string): Params => {
   const routeSegments = routePath.split('/');
   const pathSegments = currentPath.split('/');
-  const params = {};
+  const params: Params = {};
 
   routeSegments.forEach((segment, index) => {
     if (segment.startsWith(':')) {
