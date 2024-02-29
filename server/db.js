@@ -50,26 +50,27 @@ export const insertLink = (url) => {
     }
 }
 
-export const query = (key) => {
+export const query = async (key) => {
     try {
         const keyRegex = /^[a-zA-Z0-9]{6}$/
 
-        const result = keyRegex.test(key)
+        if (!keyRegex.test(key)) {
+            throw new Error('Invalid key')
+        }
 
-        if (result) {
-            const sqlQuery = 'select * from links where key = ?'
+        const sqlQuery = 'SELECT * FROM links WHERE key = ?'
+        const row = await new Promise((resolve, reject) => {
             db.get(sqlQuery, [key], (err, row) => {
                 if (err) {
+                    reject(err)
                     return console.error(err.message)
                 }
-                return row.Url
+                resolve(row.Url)
             })
-        } else {
-            throw new Error('invalid key')
-        }
+        })
+        return row
     } catch (error) {
         console.error(error)
-        return error
     }
 }
 
@@ -77,4 +78,4 @@ export const shutDown = () => db.close()
 
 setUp()
 // insertLink("https://google.com")
-// query('sv5swh')
+// await query('ug9f7q')
