@@ -65,7 +65,11 @@ export const query = async (key) => {
                     reject(err)
                     return console.error(err.message)
                 }
-                resolve(row.Url)
+                if (row) {
+                    resolve(row.Url)
+                } else {
+                    resolve(null)
+                }
             })
         })
         return row
