@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import linkRoute from './routes.js'
+import linkRoute from './routes/link.js'
 
 const app = express()
 const port = 3000
