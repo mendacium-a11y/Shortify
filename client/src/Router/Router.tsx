@@ -1,5 +1,5 @@
 import React, { useState, useEffect, FC } from 'react';
-import Route from './RouteComponent';
+import Route from './RouteComponent'
 
 interface RouteObject {
   path: string;

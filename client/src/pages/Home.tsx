@@ -16,7 +16,6 @@ import {
 
 export default function Home() {
   const [url, setUrl] = useState<string>('')
-  const [qrstate, setQrstate] = useState<string>('hidden')
   const [redirectLink, setRedirectLink] = useState<string>('')
 
 
@@ -29,7 +28,6 @@ export default function Home() {
     if (key) {
       const temp = 'https://www.google.com/' + key.key
       setRedirectLink(temp)
-      setQrstate('block')
     }
 
   }
@@ -71,7 +69,7 @@ export default function Home() {
             <DialogContent className='bg-black border-white'>
               <DialogHeader >
                 <DialogTitle>
-                <p className='text-lg text-white text-center'>'https://www.google.com/'</p>
+                <p className='text-lg text-white text-center'>{redirectLink}</p>
                 </DialogTitle>
                 <DialogDescription>
                   <QR qrString={'https://www.google.com/123456'} />

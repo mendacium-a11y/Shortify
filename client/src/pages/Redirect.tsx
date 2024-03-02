@@ -1,5 +1,5 @@
 import { redirectLink } from '@/api/url';
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 
 export default function Redirect() {
 
