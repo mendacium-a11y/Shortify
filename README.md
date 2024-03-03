@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/mendacium-a11y/">
-    <img src="sunglasses-and-hat-svgrepo-com.svg" alt="Logo" width="80" height="80">
+    <img src="./assets/sunglasses-and-hat-svgrepo-com.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Shortify</h3>
@@ -22,7 +22,7 @@ Shortify is a convenient tool that allows you to shorten your links and create Q
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<img src="./assets/site-preview.png" >
 
 Shortify is a web application that simplifies link management by offering two key functionalities:
 - URL Shortening: Paste any lengthy URL into Shortify, and it will be transformed into a concise, user-friendly version. This not only improves readability but also makes sharing links through various platforms more convenient.
