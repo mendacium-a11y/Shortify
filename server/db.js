@@ -1,6 +1,7 @@
 import sqlite3 from 'sqlite3'
+import 'dotenv/config'
 
-const DB_PATH = './database.sqlite'
+const DB_PATH = (process.env.NODE_ENV === 'production' ? ':memory:' : './database.sqlite')
 
 const db = new sqlite3.Database(DB_PATH, (err) => {
     if (err) {

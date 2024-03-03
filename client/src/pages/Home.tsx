@@ -26,7 +26,7 @@ export default function Home() {
   const handleClick = async () => {
     const key = await addLink(url)
     if (key) {
-      const temp = 'https://www.google.com/' + key.key
+      const temp = 'https://shortify-psi.vercel.app/' + key.key
       setRedirectLink(temp)
     }
 
@@ -64,7 +64,7 @@ export default function Home() {
           <Dialog>
             <DialogTrigger>
               {/* <QR qrString={'https://www.google.com/123456'} /> */}
-              <Button className='rounded-3xl bg-violet-700 hover:bg-white text-white hover:text-black text-xl h-12 w-36' onClick={handleClick} > Generate</Button>
+              <Button className='rounded-3xl bg-violet-700 hover:bg-white text-white hover:text-black text-xl h-12 w-36' onClick={handleClick} > Generate </Button>
             </DialogTrigger>
             <DialogContent className='bg-black border-white'>
               <DialogHeader >
