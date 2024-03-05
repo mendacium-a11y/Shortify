@@ -28,7 +28,7 @@ export default function Home() {
     setLoading(true);
     const key = await addLink(url)
     if (key) {
-      const temp = import.meta.env.VITE_LINK +'/r/' + key.key
+      const temp = import.meta.env.VITE_LINK +'r/' + key.key
       setRedirectLink(temp)
       setAddlinkSuccess(true)
     } else {
