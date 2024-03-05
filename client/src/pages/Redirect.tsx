@@ -13,8 +13,7 @@ export default function Redirect() {
             if(url){
                 window.location.href = url.url
             } else {
-                window.location.href = 'http://localhost:4173'
-            }
+                window.location.href = import.meta.env.VITE_LINK            }
         };
     
         doRedirect();
