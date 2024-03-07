@@ -2,7 +2,7 @@ const apiLink = import.meta.env.VITE_API_URL + 'links'
 
 export const addLink = async (url: string) => {
     try {
-        const urlRegex = /^(https?):\/\/(www\.)?([a-zA-Z0-9\-.]+\.)([a-zA-Z0-9-.]+)\/?([a-zA-z0-9\/?=%&]+)?$/
+        const urlRegex = /^(https?):\/\/(www\.)?([a-zA-Z0-9\-.]+\.)([a-zA-Z0-9-.]+)\/?([a-zA-z0-9\/?=%&-]+)?$/
 
         if (!urlRegex.test(url)) {
             return null;
