@@ -30,7 +30,7 @@ export const setUp = () => {
 
 export const insertLink = (url) => {
     try {
-        const urlRegex = /^https:\/\/.*\.com$/
+        const urlRegex = /^(https?):\/\/(www\.)?([a-zA-Z0-9\-.]+\.)([a-zA-Z0-9-.]+)\/?([a-zA-z0-9\/?=%&]+)?$/
         const result = urlRegex.test(url)
 
         if (result) {
