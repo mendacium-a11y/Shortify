@@ -36,7 +36,10 @@ Shortify is a web application that simplifies link management by offering two ke
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![React][React.js]][React-url]
+* ![ReactJS](https://react.dev/)
+* ![ExpressJS](http://expressjs.com/)
+* ![NodeJS](https://nodejs.org/en)
+* ![SQLite3](https://www.sqlite.org/index.html)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -55,12 +58,17 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/mendacium-a11y/Shortify.git
    ```
 2. Install NPM packages
-   ```sh
-   npm install
+   ```sh 
+   cd client && npm install && cd../server && npm install && cd..
    ```
+3. Run the dev server
+    ```sh
+    cd client && npm run dev && cd../server && node index.js
+    ```
+   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
