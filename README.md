@@ -106,7 +106,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@Saksham2467](https://twitter.com/Saksham2467) - sakshamsaha1212@gmail.com
+Saksham Saha - [@Saksham2467](https://twitter.com/Saksham2467) - sakshamsaha1212@gmail.com
 
 Project Link: [https://github.com/mendacium-a11y/Shortify](https://github.com/mendacium-a11y/Shortify)
 
