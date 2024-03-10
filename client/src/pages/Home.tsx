@@ -13,6 +13,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { Skeleton } from "@/components/ui/skeleton"
+import Footer from '@/components/Footer';
 
 export default function Home() {
   const [url, setUrl] = useState<string>('')
@@ -108,6 +109,7 @@ export default function Home() {
           </Dialog>
 
         </div>
+      <Footer/>
       </div >
 
     </>

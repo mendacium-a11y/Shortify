@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     // <nav className='bg-slate-950 h-[12vh] my-auto text-white flex items-center'>
-    <div className='flex flex-row pe-4 sm:px-12 text-white py-4 justify-between items-center w-100 bg-black h-[10vh]'>
+    <div id="heading" className='flex flex-row pe-4 sm:px-12 text-white py-4 justify-between items-center w-100 bg-black h-[10vh]'>
       <div className='px-10'>
         <h1 className='text-3xl'>Shortify</h1>
       </div>
