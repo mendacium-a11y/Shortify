@@ -8,7 +8,7 @@ export default function Footer() {
             <li><a target="_blank" href="https://twitter.com/Saksham2467">Twitter</a></li>
             <li><a target="_blank" href="emailto:sakshamsaha1212+shortify@gmail.com">E-mail</a></li>
             <li><a href="#heading">Top</a></li>
-            <li>Copyright 2024</li>
+            <li>Copyright @ 2024</li>
         </ul>
     </div>
   )

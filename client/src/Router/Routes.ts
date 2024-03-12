@@ -6,7 +6,7 @@ import Login from '@/pages/Login';
 const routes = [
   { path: '/', component: Home },
   { path: '/about', component: About },
-  {path: '/login', component: Login},
+  { path: '/login', component: Login},
   { path: '/r/:id', component: Redirect}
 ];
 

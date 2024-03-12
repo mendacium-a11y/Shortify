@@ -1,4 +1,4 @@
-import { insertLink, query } from './db.js'
+import { insertLink, query } from '../db.js'
 
 export const addlink = (req, res) => {
     try {
